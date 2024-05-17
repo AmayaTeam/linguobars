@@ -1,0 +1,36 @@
+version: '3.8'
+
+services:
+  db:
+    image: postgres:14.1-alpine
+    container_name: tatarmilete_pgdb
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_DB: tatarmilete
+      POSTGRES_USER: tatarmilete
+      POSTGRES_PASSWORD: tatarmilete
+    volumes:
+      - db:/var/lib/postgresql/data
+
+  web:
+    image: tatarmilete:latest
+    tty: true
+    build: .
+    command: sh -c "poetry run python manage.py migrate && 
+                    poetry run python manage.py runserver 0.0.0.0:8000"
+    container_name: tatarmilete
+    volumes:
+      - .:/app
+    ports:
+      - "8000:8000"
+    depends_on:
+      - db
+    environment:
+      DB_NAME: tatarmilete
+      DB_USER: tatarmilete
+      DB_PASS: tatarmilete
+      DB_PORT: 5432
+      DJANGO_SETTINGS_MODULE: tatarmilete.settings
+volumes:
+  db:

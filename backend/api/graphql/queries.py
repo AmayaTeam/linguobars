@@ -1,5 +1,6 @@
 import graphene
 
+from .types import CourseType, ModuleType, TaskType, AchievementType
 from ..models import (
     Course,
     Module,
@@ -7,11 +8,12 @@ from ..models import (
     Achievement
 )
 
+
 class Query(graphene.ObjectType):
-    courses = graphene.List(Course)
-    modules = graphene.List(Module)
-    tasks = graphene.List(Task)
-    achievements = graphene.List(Achievement)
+    courses = graphene.List(CourseType)
+    modules = graphene.List(ModuleType)
+    tasks = graphene.List(TaskType)
+    achievements = graphene.List(AchievementType)
 
     def resolve_courses(self, info, **kwargs):
         return Course.objects.all()

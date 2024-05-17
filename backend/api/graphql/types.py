@@ -16,6 +16,7 @@ class ModuleType(DjangoObjectType):
     class Meta:
         model = Module
 
+
 class TaskType(DjangoObjectType):
     class Meta:
         model = Task

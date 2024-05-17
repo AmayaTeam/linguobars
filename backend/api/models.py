@@ -18,7 +18,7 @@ class Course(models.Model):
 
 class Module(models.Model):
     name = models.CharField(max_length=100)
-    content = models.TextField()
+    content = models.TextField()  # визивик потом филд будет
     courses = models.ManyToManyField(Course)
 
     def __str__(self):
@@ -26,6 +26,7 @@ class Module(models.Model):
 
     class Meta:
         ordering = ['name']
+
 
 class Task(models.Model):
     type = models.CharField(max_length=100)
@@ -39,16 +40,6 @@ class Task(models.Model):
     class Meta:
         ordering = ['type']
 
-class User(models.Model):
-    username = models.CharField(max_length=100)
-    email = models.EmailField()
-    password = models.CharField(max_length=100)
-
-    def __str__(self):
-        return self.username
-
-    class Meta:
-        ordering = ['username']
 
 class Achievement(models.Model):
     description = models.CharField(max_length=100)

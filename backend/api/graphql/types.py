@@ -7,29 +7,6 @@ from ..models import (
 )
 
 
-# class ToolModuleGroupObject(DjangoObjectType):
-#     class Meta:
-#         model = ToolModuleGroup
-#
-#
-# class ToolModuleTypeObject(DjangoObjectType):
-#     class Meta:
-#         model = ToolModuleType
-#
-#
-# class ToolModuleObject(DjangoObjectType):
-#     class Meta:
-#         model = ToolModule
-#
-#
-# class ToolSensorTypeObject(DjangoObjectType):
-#     class Meta:
-#         model = ToolSensorType
-#
-#
-# class ToolInstalledSensorObject(DjangoObjectType):
-#     class Meta:
-#         model = ToolInstalledSensor
 class CourseType(DjangoObjectType):
     class Meta:
         model = Course
@@ -38,7 +15,6 @@ class CourseType(DjangoObjectType):
 class ModuleType(DjangoObjectType):
     class Meta:
         model = Module
-
 
 class TaskType(DjangoObjectType):
     class Meta:

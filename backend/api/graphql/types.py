@@ -6,9 +6,11 @@ from ..models import (
     Achievement
 )
 
+
 class CourseType(DjangoObjectType):
     class Meta:
         model = Course
+
 
 class ModuleType(DjangoObjectType):
     class Meta:
@@ -17,6 +19,7 @@ class ModuleType(DjangoObjectType):
 class TaskType(DjangoObjectType):
     class Meta:
         model = Task
+
 
 class AchievementType(DjangoObjectType):
     class Meta:

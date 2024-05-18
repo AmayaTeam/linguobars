@@ -1,7 +1,17 @@
 import "./Task.css"
 import {Link} from "react-router-dom";
+import {useState} from "react";
 
 const Task: React.FC = () => {
+    const [showPopup, setShowPopup] = useState(false); // Состояние для отображения всплывающего окна
+
+    const handleButtonClick = () => {
+        if (showPopup) {
+            setShowPopup(false);
+        } else {
+            setShowPopup(true);
+        }
+    };
     return (
         <div className="task-container">
 
@@ -10,7 +20,7 @@ const Task: React.FC = () => {
 
                 <div className="answers-container">
                     <div className="button-row">
-                        <button className="button-picture"><img src="./src/assets/apple.png"/></button>
+                        <button onClick={handleButtonClick} className="button-picture"><img src="./src/assets/apple.png"/></button>
                         <button className="button-picture"><img src="./src/assets/cup.png"/></button>
                     </div>
 
@@ -41,6 +51,8 @@ const Task: React.FC = () => {
                     <Link to="/"><button type="button" className="button-next">Complete</button></Link>
                 </div>
             </div>
+            {showPopup && <div className="popup">Всплывающее окно <button type="button" className="button-next" onClick={handleButtonClick}>Закрыть</button>
+            </div>}
         </div>
     );
 };

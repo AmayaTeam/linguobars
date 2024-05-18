@@ -56,9 +56,7 @@ const Module: React.FC = () => {
             </ul>
             <ul className="level1-disabled">
 
-                <li onClick={
-                    () => handleItemClick("level1", 1)
-                }>
+                <li >
                     <div className="themodule-disabled">
                         <p>Module 2</p>
                         <h3>Basic phrases</h3>
@@ -68,9 +66,7 @@ const Module: React.FC = () => {
             </ul>
             <ul className="level1-disabled">
 
-                <li onClick={
-                    () => handleItemClick("level1", 1)
-                }>
+                <li>
                     <div className="themodule-disabled">
                         <p>Module 3</p>
                         <h3>Grammar</h3>

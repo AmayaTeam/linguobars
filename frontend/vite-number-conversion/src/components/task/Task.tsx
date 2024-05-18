@@ -1,4 +1,5 @@
 import "./Task.css"
+import {Link} from "react-router-dom";
 
 const Task: React.FC = () => {
     return (
@@ -37,7 +38,7 @@ const Task: React.FC = () => {
                     <button type="button" className="button-skip">Пропустить</button>
                 </div>
                 <div className="button-next-div">
-                    <button type="button" className="button-next">Завершить</button>
+                    <Link to="/"><button type="button" className="button-next">Завершить</button></Link>
                 </div>
             </div>
         </div>

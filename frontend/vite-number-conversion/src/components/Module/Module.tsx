@@ -13,7 +13,9 @@ const Module: React.FC = () => {
     }
 
     return (
+
         <div className="module-container">
+
             <ul className="level1">
 
                 <li onClick={
@@ -21,7 +23,7 @@ const Module: React.FC = () => {
                 }>
                     <div className="themodule">
                         <p>Module1</p>
-                        <h3>introduction</h3>
+                        <h3>Introduction</h3>
                     </div>
                 </li>
 
@@ -31,9 +33,9 @@ const Module: React.FC = () => {
                         <div className="task-level2">
                             <li onClick={() => handleItemClick('level2', 1)}>
                                 <div className="task">
-                                    <p>First Module</p>
-                                    <h4>Spravochniy material</h4>
-                                    <p><a href="#">Posmotret` spravochniy material</a></p>
+                                    <p>Module 1</p>
+                                    <h4>Reference material</h4>
+                                    <p><a href="#">Go to reference material</a></p>
                                 </div>
                             </li>
                         </div>

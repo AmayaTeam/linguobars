@@ -51,7 +51,7 @@ li{
     margin-top: 10px;
     background-color: #F4F4F4;
     border-radius: 20px;
-    height: 60px;
+    height: 80px;
     padding: 10px;
 
 }
@@ -70,7 +70,8 @@ li{
     margin-left: 15px;
 }
 .task p{
-    margin-top: 5px;
+    margin-top: 10px;
+    color: #888888;
 }
 .task h4{
     margin: 5px;
@@ -89,9 +90,11 @@ li{
 }
 .level2 h4{
     margin: 0;
+    margin-top: 5px;
 }
 .level2 p{
     margin: 0;
+    margin-top: 5px;
 }
 .level2 > li {
     margin-left: 20px; /* Отступ для элементов второго уровня */

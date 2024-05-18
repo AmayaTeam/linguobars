@@ -1,10 +1,56 @@
-// import React from 'react';
+import React, {useState} from 'react';
 import './Module.css';
 
 const Module: React.FC = () => {
-    return (
-        <div className="container">
+    const [openLevel2, setOpenLevel2] = useState<number | null>(null);
 
+    const handleItemClick = (level: string, index: number): void => {
+        switch (level){
+            case 'level1':
+                setOpenLevel2(openLevel2 === index ? null : index);
+        break;
+        }
+    }
+
+    return (
+        <div className="module-container">
+            <ul className="level1">
+
+                <li onClick={
+                    () => handleItemClick("level1", 1)
+                }>
+                    <div className="themodule">
+                        <p>Module1</p>
+                        <h3>introduction</h3>
+                    </div>
+                </li>
+
+
+{openLevel2 === 1 && (
+                    <ul className="level2">
+                        <div className="task-level2">
+                            <li onClick={() => handleItemClick('level2', 1)}>
+                                <div className="task">
+                                    <p>First Module</p>
+                                    <h4>Spravochniy material</h4>
+                                    <p><a href="#">Posmotret` spravochniy material</a></p>
+                                </div>
+                            </li>
+                        </div>
+                        <div className="task-level2">
+                            <li onClick={() => handleItemClick('level2', 1)}>
+                                <div className="task">
+                                    <p>First Task</p>
+                                    <h4>Title task</h4>
+                                    <p>чик чик пук </p>
+                                </div>
+                            </li>
+                        </div>
+
+
+                    </ul>
+)}
+            </ul>
         </div>
     );
 };

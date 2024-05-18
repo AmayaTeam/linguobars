@@ -18,7 +18,7 @@ class Course(models.Model):
 
 class Module(models.Model):
     name = models.CharField(max_length=100)
-    content = RichTextUploadingField(models.Model)  # визивик потом филд будет
+    content = RichTextUploadingField()  # визивик потом филд будет
     courses = models.ManyToManyField(Course)
 
     def __str__(self):

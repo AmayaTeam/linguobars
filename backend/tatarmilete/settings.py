@@ -26,9 +26,6 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*", "94.241.140.95"]
 
-CKEDITOR_UPLOAD_PATH = "uploads/"
-CKEDITOR_BASEPATH = "/assets/ckeditor/ckeditor/"
-STATIC_ROOT = os.path.join(BASE_DIR, "static")
 # Application definition
 
 INSTALLED_APPS = [
@@ -42,8 +39,8 @@ INSTALLED_APPS = [
     "graphene_django",
     "api",
     "graphql_jwt",
-    'ckeditor_uploader',
     'ckeditor',
+    'ckeditor_uploader',
 ]
 
 MIDDLEWARE = [
@@ -150,7 +147,6 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/5.0/howto/static-files/
 
-STATIC_URL = "static/"
 
 # Default primary key field type
 # https://docs.djangoproject.com/en/5.0/ref/settings/#default-auto-field
@@ -169,3 +165,14 @@ AUTHENTICATION_BACKENDS = [
     "django.contrib.auth.backends.ModelBackend",
 ]
 
+STATIC_URL = 'static/'
+STATIC_ROOT = BASE_DIR / 'static'
+MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
+MEDIA_URL = '/media/'
+
+CKEDITOR_UPLOAD_PATH = 'uploads/'
+CKEDITOR_CONFIGS = {
+    'default': {
+        'toolbar': 'full',
+    },
+}

@@ -1,14 +1,14 @@
-import { useState } from 'react'
-import './App.css'
-import SingleModule from "./pages/singleModule/SingleModule.tsx";
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import './App.css';
+import SingleModule from './pages/singleModule/SingleModule';
 function App() {
-  const [count, setCount] = useState(0)
-
-  return (
-      <Routes>
-          <Route path="/" element={<SingleModule />} />
-      </Routes>
-  )
+    return (
+        <Router>
+            <Routes>
+                <Route path="/" element={<SingleModule />} />
+            </Routes>
+        </Router>
+    );
 }
 
-export default App
+export default App;

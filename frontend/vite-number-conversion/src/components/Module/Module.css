@@ -36,6 +36,7 @@ ul {
     width: 420px;
     /*margin-left: 50px;*/
     text-align: left;
+
 }
 ul:hover {
     cursor: pointer;
@@ -115,7 +116,7 @@ li{
     align-items: center;
     background-color: #FF5B00;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+
 
 }
 

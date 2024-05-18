@@ -1,5 +1,6 @@
 import {useState} from 'react';
 import './Module.css';
+import {Link} from "react-router-dom";
 
 const Module: React.FC = () => {
     const [openLevel2, setOpenLevel2] = useState<number | null>(null);
@@ -43,7 +44,7 @@ const Module: React.FC = () => {
                             <li onClick={() => handleItemClick('level2', 1)}>
                                 <div className="task">
                                     <p>First Task</p>
-                                    <h4><a href="#">First words</a></h4>
+                                    <h4><Link to="/task">First words</Link></h4>
                                     <p>Reading and learning your first word</p>
                                 </div>
                             </li>

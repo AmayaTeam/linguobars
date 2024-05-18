@@ -37,7 +37,7 @@ const Task: React.FC = () => {
                     <button type="button" className="button-skip">Пропустить</button>
                 </div>
                 <div className="button-next-div">
-                    <button type="button" className="button-next">Далее</button>
+                    <button type="button" className="button-next">Завершить</button>
                 </div>
             </div>
         </div>

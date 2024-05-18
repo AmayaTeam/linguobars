@@ -1,9 +1,25 @@
 .header-container {
     width: 100%;
-    background-color: #ff5a8c;
-    height: 500px;
+    height: 80px
+    background-color: #ffffff;
     display: flex;
     align-items: center;
-    justify-content: center;
-    color: white;
+    justify-content: space-between;
+    padding: 10px;
+}
+.header-logo{
+    display: flex;
+    align-items: center;
+
+}
+.header-logo img{
+    margin-right: 10px;
+}
+.header-logo p{
+    color: #5B5B5B;
+    font-size: 24px;
+}
+.header-nav p{
+    color: #5B5B5B;
+    font-size: 20px;
 }

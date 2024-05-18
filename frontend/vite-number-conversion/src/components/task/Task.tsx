@@ -6,7 +6,7 @@ const Task: React.FC = () => {
         <div className="task-container">
 
             <div className="tack-content-container">
-                <div className="question"><p>Выберите слово “алма”</p></div>
+                <div className="question"><p>Выберите слово <strong> “алма”</strong></p></div>
 
                 <div className="answers-container">
                     <div className="button-row">

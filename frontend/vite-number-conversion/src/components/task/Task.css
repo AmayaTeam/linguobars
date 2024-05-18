@@ -100,3 +100,20 @@
 .button-picture:hover{
     cursor: pointer;
 }
+.question {
+    width: 200px;
+    display: flex;
+    text-align: left;
+    justify-content: left;
+}
+
+.question p {
+    font-size: 24px;
+    margin: 0;
+    display: flex;
+    white-space: nowrap; /* Добавляем свойство для предотвращения переноса строки */
+}
+
+.question strong {
+    margin-left: 5px; /* Добавляем отступ слева для разделения между текстом и жирным текстом */
+}

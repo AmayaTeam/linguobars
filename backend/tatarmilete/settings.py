@@ -26,6 +26,8 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["*", "94.241.140.95"]
 
+CKEDITOR_BASEPATH = "/my_static/ckeditor/ckeditor/"
+CKEDITOR_UPLOAD_PATH = "uploads/"
 # Application definition
 
 INSTALLED_APPS = [
@@ -39,6 +41,8 @@ INSTALLED_APPS = [
     "graphene_django",
     "api",
     "graphql_jwt",
+    'ckeditor_uploader',
+    'ckeditor',
 ]
 
 MIDDLEWARE = [

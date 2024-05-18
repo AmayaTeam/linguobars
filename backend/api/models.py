@@ -1,12 +1,12 @@
 from django.contrib.auth.models import User
 from django.db import models
-
+from ckeditor_uploader.fields import RichTextUploadingField
 
 # Create your models here.
 class Course(models.Model):
     title = models.CharField(max_length=100)
     description = models.TextField()
-    image = models.ImageField(upload_to='images/courses')
+    image = models.ImageField(upload_to='images/courses/')
     users = models.ManyToManyField(User)
 
     def __str__(self):
@@ -18,7 +18,7 @@ class Course(models.Model):
 
 class Module(models.Model):
     name = models.CharField(max_length=100)
-    content = models.TextField()  # визивик потом филд будет
+    content = RichTextUploadingField(models.Model)  # визивик потом филд будет
     courses = models.ManyToManyField(Course)
 
     def __str__(self):
@@ -30,7 +30,7 @@ class Module(models.Model):
 
 class Task(models.Model):
     type = models.CharField(max_length=100)
-    content = models.TextField()
+    content = RichTextUploadingField(models.Model)
     status = models.CharField(max_length=100)
     modules = models.ManyToManyField(Module)
 

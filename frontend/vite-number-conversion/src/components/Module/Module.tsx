@@ -36,7 +36,7 @@ const Module: React.FC = () => {
                                 <div className="task">
                                     <p>Module 1</p>
                                     <h4>Reference material</h4>
-                                    <p><a href="#">Go to reference material</a></p>
+                                    <p><Link to="/material">Go to reference material</Link></p>
                                 </div>
                             </li>
                         </div>

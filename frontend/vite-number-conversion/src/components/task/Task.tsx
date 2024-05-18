@@ -16,7 +16,7 @@ const Task: React.FC = () => {
         <div className="task-container">
 
             <div className="tack-content-container">
-                <div className="question"><p>Выберите слово “алма”</p></div>
+                <div className="question"><p>Choose a word <strong> “алма”</strong></p></div>
 
                 <div className="answers-container">
                     <div className="button-row">
@@ -25,8 +25,8 @@ const Task: React.FC = () => {
                     </div>
 
                     <div className="text-row">
-                    <div className="text-answer">яблоко</div>
-                        <div className="text-answer">чашка</div>
+                        <div className="text-answer"><p>apple</p></div>
+                        <div className="text-answer"><p>cup</p></div>
                     </div>
 
                     <div className="button-row">
@@ -35,8 +35,8 @@ const Task: React.FC = () => {
                     </div>
 
                     <div className="text-row">
-                        <div className="text-answer">пирог</div>
-                        <div className="text-answer">бананы</div>
+                        <div className="text-answer"><p>pie</p></div>
+                        <div className="text-answer"><p>banana</p></div>
                     </div>
 
                 </div>
@@ -45,10 +45,10 @@ const Task: React.FC = () => {
 
             <div className="buttons-container">
                 <div className="button-skip-div">
-                    <button type="button" className="button-skip">Пропустить</button>
+                    <Link to="/"><button type="button" className="button-skip">Skip</button></Link>
                 </div>
                 <div className="button-next-div">
-                    <Link to="/"><button type="button" className="button-next">Завершить</button></Link>
+                    <Link to="/"><button type="button" className="button-next">Complete</button></Link>
                 </div>
             </div>
             {showPopup && <div className="popup">Всплывающее окно <button type="button" className="button-next" onClick={handleButtonClick}>Закрыть</button>

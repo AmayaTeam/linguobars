@@ -35,7 +35,7 @@ const Task: React.FC = () => {
 
             <div className="buttons-container">
                 <div className="button-skip-div">
-                    <button type="button" className="button-skip">Skip</button>
+                    <Link to="/"><button type="button" className="button-skip">Skip</button></Link>
                 </div>
                 <div className="button-next-div">
                     <Link to="/"><button type="button" className="button-next">Complete</button></Link>

@@ -45,10 +45,14 @@ const Task: React.FC = () => {
 
             <div className="buttons-container">
                 <div className="button-skip-div">
-                    <Link to="/"><button type="button" className="button-skip">Skip</button></Link>
+                    <Link to="/">
+                        <button>Skip</button>
+                    </Link>
                 </div>
                 <div className="button-next-div">
-                    <Link to="/"><button type="button" className="button-next">Complete</button></Link>
+                    <Link to="/">
+                        <button >Complete</button>
+                    </Link>
                 </div>
             </div>
             {showPopup && <div className="popup">Всплывающее окно <button type="button" className="button-next" onClick={handleButtonClick}>Закрыть</button>

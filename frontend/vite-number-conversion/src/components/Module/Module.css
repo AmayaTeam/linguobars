@@ -1,16 +1,19 @@
 .module-container{
-    width: 420px;
-    padding: 10px;
+    width: auto;
+    /*padding: 10px;*/
     display: flex;
+    /*padding-right: 50px;*/
+    padding: 10px 50px 50px 50px;
     flex-direction: column;
     align-items: center;
-    justify-content: left;
-    margin-left: 20px;
+    justify-content: center;
+    /*margin-left: 20px;*/
 
 }
 
 .barsik{
     align-items: center;
+    width: 100%;
 }
 .barsik img{
     max-height: 200px;
@@ -33,16 +36,17 @@ ul {
     list-style: none; /* Убираем маркеры списка */
     padding: 0;
     margin-bottom: 1px;
-    width: 420px;
+    width: 100%;
     /*margin-left: 50px;*/
     text-align: left;
+    margin-right: 20px;
 
 }
 ul:hover {
     cursor: pointer;
 }
 li{
-    width: 420px;
+    width: 100%;
     align-items: center;
 }
 .themodule p{
@@ -74,10 +78,13 @@ li{
     display: flex;
     flex-direction: column;
     margin-top: 10px;
+    margin-right: 20px;
+    /*margin-left: 20px;*/
     background-color: #F4F4F4;
     border-radius: 20px;
     height: 80px;
     padding: 10px;
+    width: 100%;
 
 }
 
@@ -93,6 +100,8 @@ li{
     align-items: center;
     flex-direction: column;
     margin-left: 15px;
+    width: 100%;
+    margin-right: 20px;
 }
 .task a{
     text-decoration: none;
@@ -112,7 +121,7 @@ li{
 .level1 > li {
     margin-left: 0; /* Сбрасываем отступ для элементов первого уровня */
     padding: 10px;
-    width: 400px;
+    width: 100%;
     align-items: center;
     background-color: #FF5B00;
     border-radius: 20px;
@@ -124,7 +133,8 @@ li{
 .level1-disabled > li {
     margin-left: 0; /* Сбрасываем отступ для элементов первого уровня */
     padding: 10px;
-    width: 400px;
+    width: 100%;
+    margin-right: 50px;
     align-items: center;
      background-color: #888888;
     border-radius: 20px;
@@ -143,6 +153,7 @@ li{
     margin-left: 20px; /* Отступ для элементов второго уровня */
     width: 100%;
     margin-top: 10px;
+    margin-right: 50px;
     border-radius: 20px;
     border: 1px #C1C1C1 solid;
     align-items: center;

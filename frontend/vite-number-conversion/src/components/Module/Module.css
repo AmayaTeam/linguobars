@@ -8,13 +8,22 @@
     margin-left: 20px;
 
 }
+
+.barsik{
+    align-items: center;
+}
+.barsik img{
+    max-height: 200px;
+}
 a {
-    text-decoration: none; /* Убираем подчеркивание ссылки */
+    /*text-decoration: none; !* Убираем подчеркивание ссылки *!*/
     color: inherit; /* Устанавливаем дефолтный цвет текста для ссылки */
+    font-weight: bolder;
 }
 
 a:hover {
-    cursor: default; /* Отключаем изменение курсора при наведении */
+    cursor: pointer; /* Отключаем изменение курсора при наведении */
+    color: black;
 }
 
 
@@ -23,10 +32,13 @@ a:hover {
 ul {
     list-style: none; /* Убираем маркеры списка */
     padding: 0;
-    /*margin: 0;*/
+    margin-bottom: 1px;
     width: 420px;
     /*margin-left: 50px;*/
     text-align: left;
+}
+ul:hover {
+    cursor: pointer;
 }
 li{
     width: 420px;
@@ -34,9 +46,22 @@ li{
 }
 .themodule p{
     margin: 0;
-    color: #5B5B5B;
+    color: #ffffff;
 }
 .themodule h3{
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: bold;
+    margin: 0;
+}
+.themodule-disabled{
+    background-color: #888888;
+}
+.themodule-disabled p{
+    margin: 0;
+    color: #ffffff;
+}
+.themodule-disabled h3{
     color: #ffffff;
     font-size: 20px;
     font-weight: bold;
@@ -68,6 +93,11 @@ li{
     flex-direction: column;
     margin-left: 15px;
 }
+.task a{
+    text-decoration: none;
+}
+.task a:hover{
+    color: inherit;}
 .task p{
     margin-top: 10px;
     color: #888888;
@@ -76,6 +106,7 @@ li{
     margin: 5px;
     color: #FF5B00;
     margin-left: 10px;
+    font-size: 17px;
 }
 .level1 > li {
     margin-left: 0; /* Сбрасываем отступ для элементов первого уровня */
@@ -83,6 +114,18 @@ li{
     width: 400px;
     align-items: center;
     background-color: #FF5B00;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
+
+}
+
+
+.level1-disabled > li {
+    margin-left: 0; /* Сбрасываем отступ для элементов первого уровня */
+    padding: 10px;
+    width: 400px;
+    align-items: center;
+     background-color: #888888;
     border-radius: 20px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Тень для эффекта поднятости */
 

@@ -15,19 +15,19 @@ const Module: React.FC = () => {
     return (
 
         <div className="module-container">
-
+        <div className="barsik">
+            <img src="./src/assets/barsik.png"/>
+        </div>
             <ul className="level1">
 
                 <li onClick={
                     () => handleItemClick("level1", 1)
                 }>
                     <div className="themodule">
-                        <p>Module1</p>
+                        <p>Module 1</p>
                         <h3>Introduction</h3>
                     </div>
                 </li>
-
-
 {openLevel2 === 1 && (
                     <ul className="level2">
                         <div className="task-level2">
@@ -43,8 +43,8 @@ const Module: React.FC = () => {
                             <li onClick={() => handleItemClick('level2', 1)}>
                                 <div className="task">
                                     <p>First Task</p>
-                                    <h4>Title task</h4>
-                                    <p>чик чик пук </p>
+                                    <h4><a href="#">First words</a></h4>
+                                    <p>Reading and learning your first word</p>
                                 </div>
                             </li>
                         </div>
@@ -52,6 +52,30 @@ const Module: React.FC = () => {
 
                     </ul>
 )}
+            </ul>
+            <ul className="level1-disabled">
+
+                <li onClick={
+                    () => handleItemClick("level1", 1)
+                }>
+                    <div className="themodule-disabled">
+                        <p>Module 2</p>
+                        <h3>Basic phrases</h3>
+                    </div>
+                </li>
+
+            </ul>
+            <ul className="level1-disabled">
+
+                <li onClick={
+                    () => handleItemClick("level1", 1)
+                }>
+                    <div className="themodule-disabled">
+                        <p>Module 3</p>
+                        <h3>Grammar</h3>
+                    </div>
+                </li>
+
             </ul>
         </div>
     );

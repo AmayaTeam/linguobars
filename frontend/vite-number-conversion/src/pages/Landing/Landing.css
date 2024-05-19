@@ -1,0 +1,105 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.landing-content {
+    flex-wrap: wrap;
+}
+
+.barsik {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
+}
+.img-container {
+    height: 370px;
+    width: 420px;
+    background-image: url("./src/assets/bars.png");
+    background-size: cover; /* Изображение покрывает весь элемент */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
+}
+.barsik img {
+    height: 520px;
+    width: 573px;
+    margin: 0;
+}
+
+.landing-heading {
+    padding: 0 50px 0 50px;
+    margin: 10px 0 20px 0;
+}
+
+.go-button {
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    background-color: #0cc400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 1, 0.5); /* Тень для эффекта поднятости */
+}
+
+.go-button:hover {
+    cursor: pointer;
+}
+
+.go-button h2 {
+    color: #F4F4F4;
+    font-weight: bold;
+}
+.present{
+    margin-bottom: 30px;
+}
+.present p {
+    margin-top: 10px;
+    font-weight: bolder;
+}
+
+.pluses {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pluse {
+    background: linear-gradient(29deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+    margin: 10px 0;
+    text-align: center;
+    height: 120px;
+    width: 190px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.pluse p {
+    margin: 0;
+    color: black;
+    max-width: 120px;
+}
+
+.pluse h1 {
+    color: black;
+    margin: 0 0 5px 0;
+}
+
+.pluse:nth-child(1) {
+    background: linear-gradient(29deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(2) {
+    background: linear-gradient(30deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(3) {
+    background: linear-gradient(31deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(4) {
+    background: linear-gradient(32deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}

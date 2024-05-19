@@ -12,11 +12,13 @@
     display: flex;
     justify-content: center;
 }
-.img-container{
-    /*display: flex;*/
-    height: 507px;
-    width: 573px;
+.img-container {
+    height: 370px;
+    width: 420px;
     background-image: url("./src/assets/bars.png");
+    background-size: cover; /* Изображение покрывает весь элемент */
+    background-position: center; /* Центрирование изображения */
+    background-repeat: no-repeat; /* Избегаем повторения изображения */
 }
 .barsik img {
     height: 520px;

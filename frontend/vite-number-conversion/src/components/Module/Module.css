@@ -17,6 +17,7 @@
 }
 .barsik img{
     max-height: 200px;
+    max-width: 350px;
 }
 a {
     /*text-decoration: none; !* Убираем подчеркивание ссылки *!*/
@@ -138,7 +139,10 @@ li{
     align-items: center;
      background-color: #888888;
     border-radius: 20px;
-    box-shadow: 0 0 10px rgba(0, 0, 1, 0.5);
+    /*box-shadow: 0 0 10px rgba(0, 0, 1, 0.5);*/
+}
+.level1-disabled > li:hover{
+    cursor: default;
 }
 .level2 h4{
     margin: 0;

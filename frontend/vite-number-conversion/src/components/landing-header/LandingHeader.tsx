@@ -4,20 +4,30 @@ import {Link} from "react-router-dom";
 const Header: React.FC = () => {
     return (
         <div className="landingheader-container">
+            <Link to="/">
             <div className="header-logo">
-                <img src='../src/assets/flower-icon.png' alt="logo" />
-                <h2>ТатарМилләте</h2>
+
+                    <img src='../src/assets/flower-icon.png' alt="logo"/>
+                    <h2>ТатарМилләте</h2>
+
             </div>
+        </Link>
             <div className="header-nav">
-                <div className="header-nav-title">
-                    <Link to="/course"><p>Экспресс курс</p></Link>
+                <Link to="/course">
+            <div className="header-nav-title">
+                    <p>Экспресс курс</p>
                 </div>
+                </Link>
+                <Link to="/about-project">
                 <div className="header-nav-title">
-                    <Link to="/about-project"><p>О проекте</p></Link>
+                    <p>О проекте</p>
                 </div>
+                </Link>
+                <Link to="/contacts">
                 <div className="header-nav-title">
-                    <Link to="/contacts"><p>Контакты</p></Link>
+                    <p>Контакты</p>
                 </div>
+                </Link>
             </div>
         </div>
     );

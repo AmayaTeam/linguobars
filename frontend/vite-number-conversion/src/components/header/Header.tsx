@@ -1,14 +1,17 @@
 import './Header.css';
+import {Link} from "react-router-dom";
 
 const Header: React.FC = () => {
     return (
         <div className="header-container">
-            <div className="header-logo">
-                <img src='../src/assets/flower-icon.png' alt="logo" />
-                <p>ТатарМилләте</p>
-            </div>
+
+                <div className="header-logo">
+                    <img src='../src/assets/flower-icon.png' alt="logo"/>
+                    <Link to="/"><h2>ТатарМилләте</h2></Link>
+                </div>
+
             <div className="header-nav">
-                <p>Profile</p>
+                <Link to="/profile"><p>Profile</p></Link>
             </div>
         </div>
     );

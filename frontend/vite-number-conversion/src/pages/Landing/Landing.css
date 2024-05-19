@@ -1,0 +1,60 @@
+.landing-container {
+    display: flex;
+    flex-direction: column;
+}
+.landing-content{
+    flex-wrap: wrap;
+}
+.barsik{
+    margin-top: 50px;
+}
+.landing-heading{
+
+}
+.go-button{
+    border-radius: 20px;
+    width: 180px;
+    height: 60px;
+    background-color: #0cc400;
+    border: none;
+    box-shadow: 0 0 10px rgba(0, 0, 1, 0.5); /* Тень для эффекта поднятости */
+
+
+}
+.go-button button:hover{
+    cursor: pointer;
+}
+.go-button h2{
+    color: #F4F4F4;
+    font-weight: bold;
+}
+.present p{
+    margin-top: 10px;
+    font-weight: bolder;
+}
+.pluses{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.pluse{
+    height: 70px;
+    width: 190px;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 5px;
+    background-color: #FF5B00;
+    border-radius: 20px;
+    color: #F4F4F4;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    flex-direction: column;
+}
+.pluse p{
+    margin: 0;
+    color: #F4F4F4;
+}
+.pluse h2{
+    margin: 0;
+}

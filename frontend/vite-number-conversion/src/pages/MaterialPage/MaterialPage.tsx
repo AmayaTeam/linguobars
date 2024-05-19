@@ -15,7 +15,7 @@ const MaterialPage: React.FC = () => {
                     <p>ну короче да тыры пыры учите китайский</p>
                 </div>
                 <div className="button-next-div">
-                    <Link to="/">
+                    <Link to="/course">
                         <button type="button" className="button-next">Done</button>
                     </Link>
                 </div>

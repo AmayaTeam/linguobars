@@ -1,6 +1,7 @@
 import "./Task.css"
 import {Link} from "react-router-dom";
 import {useState} from "react";
+import Landing from "../../pages/Landing/Landing.tsx";
 
 const Task: React.FC = () => {
     const [showPopup, setShowPopup] = useState(false); // Состояние для отображения всплывающего окна
@@ -45,18 +46,26 @@ const Task: React.FC = () => {
 
             <div className="buttons-container">
                 <div className="button-skip-div">
-                    <Link to="/">
+                    <Link to="/course">
                         <button>Skip</button>
                     </Link>
                 </div>
                 <div className="button-next-div">
-                    <Link to="/">
+                    <Link to="/course">
                         <button >Complete</button>
                     </Link>
                 </div>
             </div>
-            {showPopup && <div className="popup">Всплывающее окно <button type="button" className="button-next" onClick={handleButtonClick}>Закрыть</button>
-            </div>}
+            <div className="window">
+                {showPopup && <div className="popup">
+
+                        <img src="./src/assets/barsik.png"/>
+                        <h3>Correct answer! +1</h3>
+                    <Link to="/task"><button type="button" className="button-next" onClick={handleButtonClick}>Cool!</button></Link>
+
+                </div>}
+            </div>
+
         </div>
     );
 };

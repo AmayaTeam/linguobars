@@ -7,12 +7,13 @@ const Landing: React.FC = () => {
             <LandingHeader/>
             <div className="landing-content">
                 <div className="barsik">
-                    <img src="./src/assets/barsik.png"/>
+                    <div className="img-container">
+                    </div>
                 </div>
                 <div className="landing-heading">
                     <h1>
-                        Learn Tatar Language u vse takoe
-                    </h1>
+                        Learn the basics of the Tatar language
+                        in just a week                    </h1>
                 </div>
                 <div>
                     <button className="go-button" type="submit">
@@ -24,19 +25,19 @@ const Landing: React.FC = () => {
                 </div>
                 <div className="pluses">
                     <div className="pluse">
-                        <h2>30</h2>
+                        <h1>30</h1>
                         <p>new words per day</p>
                     </div>
                     <div className="pluse">
-                        <h2>5</h2>
+                        <h1>5</h1>
                         <p>minuts for learning per day</p>
                     </div>
                     <div className="pluse">
-                        <h2>4</h2>
+                        <h1>4</h1>
                         <p>days for learn basics in tatar language</p>
                     </div>
                     <div className="pluse">
-                        <h2>100</h2>
+                        <h1>100</h1>
                         <p>basic phases</p>
                     </div>
                 </div>

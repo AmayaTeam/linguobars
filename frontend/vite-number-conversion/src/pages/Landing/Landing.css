@@ -2,59 +2,102 @@
     display: flex;
     flex-direction: column;
 }
-.landing-content{
+
+.landing-content {
     flex-wrap: wrap;
 }
-.barsik{
-    margin-top: 50px;
-}
-.landing-heading{
 
+.barsik {
+    margin-top: 60px;
+    display: flex;
+    justify-content: center;
 }
-.go-button{
+.img-container{
+    /*display: flex;*/
+    height: 507px;
+    width: 573px;
+    background-image: url("./src/assets/bars.png");
+}
+.barsik img {
+    height: 520px;
+    width: 573px;
+    margin: 0;
+}
+
+.landing-heading {
+    padding: 0 50px 0 50px;
+    margin: 10px 0 20px 0;
+}
+
+.go-button {
     border-radius: 20px;
     width: 180px;
     height: 60px;
     background-color: #0cc400;
     border: none;
     box-shadow: 0 0 10px rgba(0, 0, 1, 0.5); /* Тень для эффекта поднятости */
-
-
 }
-.go-button button:hover{
+
+.go-button:hover {
     cursor: pointer;
 }
-.go-button h2{
+
+.go-button h2 {
     color: #F4F4F4;
     font-weight: bold;
 }
-.present p{
+.present{
+    margin-bottom: 30px;
+}
+.present p {
     margin-top: 10px;
     font-weight: bolder;
 }
-.pluses{
+
+.pluses {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-.pluse{
-    height: 70px;
+
+.pluse {
+    background: linear-gradient(29deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+    margin: 10px 0;
+    text-align: center;
+    height: 90px;
     width: 190px;
-    padding: 10px 20px 10px 20px;
-    margin-bottom: 5px;
-    background-color: #FF5B00;
+    padding: 10px 20px;
     border-radius: 20px;
-    color: #F4F4F4;
-    align-items: center;
-    justify-content: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
+    justify-content: center;
 }
-.pluse p{
+
+.pluse p {
     margin: 0;
-    color: #F4F4F4;
+    color: black;
+    max-width: 120px;
 }
-.pluse h2{
-    margin: 0;
+
+.pluse h1 {
+    color: black;
+    margin: 0 0 5px 0;
+}
+
+.pluse:nth-child(1) {
+    background: linear-gradient(29deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(2) {
+    background: linear-gradient(30deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(3) {
+    background: linear-gradient(31deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
+}
+
+.pluse:nth-child(4) {
+    background: linear-gradient(32deg, rgba(255, 255, 255, 0.3) 10%, rgba(137, 226, 25, 0.3) 43%, rgba(255, 0, 0, 0.3) 92%);
 }

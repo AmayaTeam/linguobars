@@ -16,8 +16,15 @@ const Task: React.FC = () => {
     return (
         <div className="task-container">
 
-            <div className="tack-content-container">
-                <div className="question"><p>Выберите правильный перевод слова <strong> “алма”</strong></p></div>
+            < div className="tack-content-container">
+                <div className="question">
+                    <div>
+                        <p>Выберите правильный </p>
+                        <p>перевод слова </p>
+                    </div>
+                    <div className="word">
+                        <p> “алма”</p></div>
+                </div>
 
                 <div className="answers-container">
                     <div className="button-row">

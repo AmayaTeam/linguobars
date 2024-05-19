@@ -10,13 +10,13 @@ const Header: React.FC = () => {
             </div>
             <div className="header-nav">
                 <div className="header-nav-title">
-                    <Link to="/course"><p>Express course</p></Link>
+                    <Link to="/course"><p>Экспресс курс</p></Link>
                 </div>
                 <div className="header-nav-title">
-                    <Link to="/about-project"><p>About project</p></Link>
+                    <Link to="/about-project"><p>О проекте</p></Link>
                 </div>
                 <div className="header-nav-title">
-                    <Link to="/contacts"><p>Contacts</p></Link>
+                    <Link to="/contacts"><p>Контакты</p></Link>
                 </div>
             </div>
         </div>

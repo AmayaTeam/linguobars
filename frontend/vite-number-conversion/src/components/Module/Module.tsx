@@ -25,8 +25,8 @@ const Module: React.FC = () => {
                     () => handleItemClick("level1", 1)
                 }>
                     <div className="themodule">
-                        <p>Module 1</p>
-                        <h3>Introduction</h3>
+                        <p>Модуль #1</p>
+                        <h3>Первые шаги</h3>
                     </div>
                 </li>
 {openLevel2 === 1 && (
@@ -34,18 +34,18 @@ const Module: React.FC = () => {
                         <div className="task-level2">
                             <li onClick={() => handleItemClick('level2', 1)}>
                                 <div className="task">
-                                    <p>Module 1</p>
-                                    <h4>Reference material</h4>
-                                    <p><Link to="/material">Go to reference material</Link></p>
+                                    <p>Модуль #1</p>
+                                    <h4>Справочный материал</h4>
+                                    <p><Link to="/material">Перейти</Link></p>
                                 </div>
                             </li>
                         </div>
                         <div className="task-level2">
                             <li onClick={() => handleItemClick('level2', 1)}>
                                 <div className="task">
-                                    <p>First Task</p>
-                                    <h4><Link to="/task">First words</Link></h4>
-                                    <p>Reading and learning your first word</p>
+                                    <p>Задание #1</p>
+                                    <h4><Link to="/task">Первые слова</Link></h4>
+                                    <p>Читаем и запоминаем первые слова</p>
                                 </div>
                             </li>
                         </div>
@@ -58,8 +58,8 @@ const Module: React.FC = () => {
 
                 <li >
                     <div className="themodule-disabled">
-                        <p>Module 2</p>
-                        <h3>Basic phrases</h3>
+                        <p>Модуль #2</p>
+                        <h3>Основные фразы</h3>
                     </div>
                 </li>
 
@@ -69,7 +69,7 @@ const Module: React.FC = () => {
                 <li>
                     <div className="themodule-disabled">
                         <p>Module 3</p>
-                        <h3>Grammar</h3>
+                        <h3>Грамматика</h3>
                     </div>
                 </li>
 

@@ -12,33 +12,33 @@ const Landing: React.FC = () => {
                 </div>
                 <div className="landing-heading">
                     <h1>
-                        Learn the basics of the Tatar language
-                        in just a week                    </h1>
+                        Изучите основы татарского языка
+                        всего за неделю                    </h1>
                 </div>
                 <div>
                     <button className="go-button" type="submit">
-                        <Link to="/course"><h2>Go to learn</h2></Link>
+                        <Link to="/course"><h2>Перейти</h2></Link>
                     </button>
                 </div>
                 <div className="present">
-                    <Link to="/"><p>Get present</p></Link>
+                    <Link to="/"><p>Получить подарок</p></Link>
                 </div>
                 <div className="pluses">
                     <div className="pluse">
                         <h1>30</h1>
-                        <p>new words per day</p>
+                        <p>новых слов в день</p>
                     </div>
                     <div className="pluse">
                         <h1>5</h1>
-                        <p>minuts for learning per day</p>
+                        <p>минут обучения в день</p>
                     </div>
                     <div className="pluse">
                         <h1>4</h1>
-                        <p>days for learn basics in tatar language</p>
+                        <p>дня изучения основ татарского языка</p>
                     </div>
                     <div className="pluse">
                         <h1>100</h1>
-                        <p>basic phases</p>
+                        <p>основных фраз для разговора</p>
                     </div>
                 </div>
             </div>
